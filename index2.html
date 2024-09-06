@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pw.css">
+</head>
+<body>
+   
+    <!--Tugas Proyek 2-->
+
+    <form>
+        <fieldset>
+            <legend>Login Menu</legend>
+        <table>
+            <tr>
+                <td><label for="text">Username:</label></td>
+                <td><input type="uname" id="uname" name="username" required="Harus diisi"><br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="pass">Password:</label></td>
+                <td><input type="password" id="pass" name="password" required><br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="pass">Konfirmasi Password:</label></td>
+                <td><input type="password" id="ttl" name="password" required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Daftar"></td>
+            </tr>
+        </table>
+    </fieldset>
+    </form>
+
+
+    <form action="#">
+        <fieldset>
+            <legend>Data</legend>
+        <table>
+            <tr>
+                <td><label for="Nama">Nama</label></td>
+                <td><input type="nama" id="nama" name="nama" required></td>
+            </tr>
+            <tr>
+                <td><B>Jenis kelamin</B></td>
+                <td><input type="radio" id="pr" name="jk"><label for="pria">Pria</label></td>
+                <td><input type="radio" id="lk" name="jk"><label for="pr">Perempuan</label></td>
+            </tr>
+            <tr>
+                <td><b>Hobi</b></td>
+                <td><input type="checkbox" id="bola" name="hobi"><label for="bola">Bola</label>
+                <input type="checkbox" id="atlet" name="hobi"><label for="atlet">Atletik</label><br>
+                <input type="checkbox" id="renang" name="hobi"><label for="renang">Renang</label></td>
+            </tr>
+            <tr>
+                <td><label for="alamat">Alamat</label></td>
+                <td>
+                    <textarea required name="alamat" id="alamat" rows="5" cols="20" wrap="virtual">Isi alamat disini
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Agama</b></td>
+                <td><select name="Agama" id="agama">
+                    <option value="islam">Islam</option>
+                    <option value="katolik">Katolik</option>
+                    <option value="protestan">Protestan</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="buddha">Buddha</option>
+                    <option value="konghucu">Konghucu</option>
+                </select></td>
+            </tr>
+        </table>
+        </fieldset>
+        <button>submit</button>
+    </form>
+</body>
+</html>
