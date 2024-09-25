@@ -1,0 +1,58 @@
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="pass"],
+textarea,
+select {
+    width:"100%";
+    padding: "10px";
+    margin-bottom: "10px";
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+button {
+    width: 100%; /* Membuat tombol selebar form */
+    padding: 10px; /* Padding pada tombol */
+    background-color: #4CAF50; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border tombol */
+    border-radius: 5px; /* Sudut melengkung pada tombol */
+    font-size: 16px; /* Ukuran font pada tombol */
+    cursor: pointer; /* Ubah kursor saat hover */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+textarea {
+    height: 50px; /* Tinggi textarea */
+    resize: none; /* Mengizinkan perubahan ukuran secara vertikal */
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Diskon Pulsa</title>
+</head>
+<body>
+
+    <h1>Hitung Diskon Pulsa</h1>
+    
+    <!-- Input untuk jumlah pulsa -->
+    <label for="pulsa">Jumlah Pulsa:</label>
+    <input type="number" id="pulsa" placeholder="Masukkan jumlah pulsa">
+
+    <br><br>
+
+    <!-- Pilihan operator -->
+    <label for="operator">Pilih Operator:</label>
+    <br>
+    <input type="radio" id="telkomsel" name="operator" value="Telkomsel">
+    <label for="telkomsel">Telkomsel</label>
+    <br>
+    <input type="radio" id="indosat" name="operator" value="Indosat">
+    <label for="indosat">Indosat</label>
+    <br>
+    <input type="radio" id="xl" name="operator" value="XL">
+    <label for="xl">XL</label>
+    
+    <br><br>
+
+    <!-- Tombol untuk menghitung biaya -->
+    <button onclick="hitungBiaya()">Hitung Biaya</button>
+
+    <script>
+        function hitungBiaya() {
+            // Ambil nilai pulsa yang dimasukkan
+            let jumlahPulsa = parseFloat(document.getElementById('pulsa').value);
+            
+            // Ambil operator yang dipilih
+            let operator = document.querySelector('input[name="operator"]:checked').value;
+            
+            // Tentukan diskon berdasarkan operator
+            let diskon = 0;
+            if (operator === "Telkomsel") {
+                diskon = 0.1; // 10% untuk Telkomsel
+            } else if (operator === "Indosat") {
+                diskon = 0.05; // 5% untuk Indosat
+            } else if (operator === "XL") {
+                diskon = 0.02; // 2% untuk XL
+            }
+
+            // Hitung total biaya setelah diskon
+            let totalDiskon = jumlahPulsa * diskon;
+            let totalBiaya = jumlahPulsa - totalDiskon;
+            
+            // Tampilkan hasil
+            alert("Diskon " + (diskon * 100) + "%, biaya: " + totalBiaya);
+        }
+    </script>
+
+</body>
+</html>
